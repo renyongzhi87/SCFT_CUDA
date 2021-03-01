@@ -1,0 +1,9 @@
+intag=1024
+xN=30.0
+fa=0.78
+lx=29.30, ly=14.5,  lz=2.4494897427831781
+Nx=128, Ny=64, Nz=1
+ds0=0.01
+wopt=0.2
+ErrorinCompMax=0.0000001
+batch=1
