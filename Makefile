@@ -160,15 +160,16 @@ FLAGFFT=-lcufft
 # Target rules
 SOURCEDIR=src
 
-BUILDDIR =build
+BUILDDIR=build
 
 HEADER = $(SOURCEDIR)/init_cuda.h $(SOURCEDIR)/struct.h $(SOURCEDIR)/cuda_scft.h  $(SOURCEDIR)/init.h  $(SOURCEDIR)/cuda_aid.cuh 
 
 
 
-all:  $(BUILDDIR) 
+all: dir $(BUILDDIR) 
 
-
+dir:
+	mkdir -p $(BUILDDIR)
 
 
 build: scft
